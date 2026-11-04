@@ -1,0 +1,56 @@
+{
+  "threshold": 0.45,
+  "bots": [
+    {
+      "id": "quill",
+      "job": "draft and revise markdown notes in the local sample memory",
+      "anti_jobs": [
+        "place paper trades",
+        "merge staged imports",
+        "cite memory sources"
+      ],
+      "hints": ["draft", "revise", "markdown"]
+    },
+    {
+      "id": "archivist",
+      "job": "answer questions from local notes and cite the source",
+      "anti_jobs": [
+        "invent missing facts",
+        "place paper trades",
+        "merge staged imports"
+      ],
+      "hints": ["cite", "source", "memory"]
+    },
+    {
+      "id": "ledger",
+      "job": "run the paper trading desk on synthetic prices",
+      "anti_jobs": [
+        "send live orders",
+        "store exchange logins",
+        "edit memory notes",
+        "approve staged imports"
+      ],
+      "hints": ["paper", "trade", "desk", "position"]
+    },
+    {
+      "id": "porter",
+      "job": "stage imported notes until a human approves the merge",
+      "anti_jobs": [
+        "merge without approval",
+        "cite memory sources",
+        "place paper trades"
+      ],
+      "hints": ["stage", "import", "approve", "merge"]
+    },
+    {
+      "id": "warden",
+      "job": "veto paper entries that break risk cooldown or size rules",
+      "anti_jobs": [
+        "raise the position size",
+        "open a fresh entry",
+        "rewrite memory notes"
+      ],
+      "hints": ["veto", "cooldown", "oversized", "risk"]
+    }
+  ]
+}
